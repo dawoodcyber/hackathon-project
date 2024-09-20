@@ -1,17 +1,13 @@
-// Function to toggle the visibility of the skills section
-const toggleSkills = (): void => {
+document.getElementById('toggle-skills')?.addEventListener('click', () => {
     const skillsSection = document.getElementById('skills');
     if (skillsSection) {
-        if (skillsSection.style.display === 'none') {
-            skillsSection.style.display = 'block';
-        } else {
-            skillsSection.style.display = 'none';
+        const sectionContent = skillsSection.querySelector('.section-content');
+        if (sectionContent) {
+            if (sectionContent.style.display === 'none') {
+                sectionContent.style.display = 'block';
+            } else {
+                sectionContent.style.display = 'none';
+            }
         }
     }
-};
-
-// Adding an event listener to the "Toggle Skills" button
-const toggleSkillsBtn = document.getElementById('toggleSkillsBtn');
-if (toggleSkillsBtn) {
-    toggleSkillsBtn.addEventListener('click', toggleSkills);
-}
+});

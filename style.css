@@ -1,57 +1,111 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: white;
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.resume-container {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    width: 30%;
+    background-color: #f1f1f1;
     padding: 20px;
     text-align: center;
 }
 
-h1, h2 {
-    margin: 10px 0;
+.left-column h1 {
+    font-size: 22px;
+    color: #333;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.left-column h2 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
 }
 
-.profile-pic {
-    width: 150px;
+.left-column .profile-picture img {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
-button {
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
+.left-column section {
+    margin-bottom: 30px;
 }
 
-button:hover {
-    background-color: #555;
+.left-column h3 {
+    font-size: 18px;
+    color: #0a5fb4;
+    border-bottom: 2px solid #0a5fb4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+.left-column p, 
+.left-column ul {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
-    .profile-pic {
-        width: 100px;
-    }
+.right-column {
+    width: 70%;
+    padding: 20px;
+}
 
-    section {
-        padding: 10px;
-    }
+.right-column section {
+    margin-bottom: 30px;
+}
+
+.right-column h3 {
+    font-size: 18px;
+    color: #0a5fb4;
+    border-bottom: 2px solid #0a5fb4;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.right-column .item {
+    margin-bottom: 15px;
+}
+
+.right-column h4 {
+    font-size: 16px;
+    color: #333;
+}
+
+.right-column p {
+    font-size: 14px;
+    color: #555;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills li {
+    font-size: 14px;
+    color: #555;
+}
+
+.references p {
+    font-size: 14px;
+    color: #555;
 }

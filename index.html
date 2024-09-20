@@ -3,46 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Dawood Shaikh's Resume</h1>
-        <p id="contact-info">Email: dawood@example.com | Phone: +1234567890</p>
-    </header>
+    <div class="resume-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="profile-picture">
+                <img src="profile.jpg" alt="Profile Picture">
+            </div>
+            <h1>Dawood Shaikh</h1>
+            <h2>SOC Analyst</h2>
 
-    <section id="personal-info">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h2>Personal Information</h2>
-        <p>Name: Dawood Shaikh</p>
-        <p>Location: Karachi, Pakistan</p>
-    </section>
+            <section class="about">
+                <h3>About Me</h3>
+                <p>Passionate Cyber Security expert with 5yrs of practical industry experience.</p>
+            </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor's in Computer Science - ABC University (2020-2024)</li>
-            <li>Certification in Cybersecurity - Google Cybersecurity Professional Certification (2024)</li>
-        </ul>
-    </section>
+            <section class="contact-info">
+                <h3>Contact Me</h3>
+                <ul>
+                    <li>Address: 54 Stress Address,PECHS</li>
+                    <li>Phone: +92 23 456 789</li>
+                    <li>Email: securityHub.com</li>
+                    <li>Facebook: dawoodcyber</li>
+                    <li>Twitter: dawoodcyber</li>
+                    <li>LinkedIn: dawoodcyber</li>
+                </ul>
+            </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5, CSS3, JavaScript, TypeScript</li>
-            <li>Network Security</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
+            <section class="awards">
+                <h3>Awards</h3>
+                <p>Best Design Award - 2019</p>
+            </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <p>Intern at XYZ Tech, Karachi (2023)</p>
-    </section>
+            <section class="interests">
+                <h3>Interests</h3>
+                <ul>
+                    <li>Traveling</li>
+                    <li>Cycling</li>
+                    <li>Gym</li>
+                    <li>Reading</li>
+                </ul>
+            </section>
+        </div>
 
-    <button id="toggleSkillsBtn">Toggle Skills</button>
+        <!-- Right Column -->
+        <div class="right-column">
+            <section class="experience">
+                <h3>Experience</h3>
+                <div class="item">
+                    <h4>2019 - Present</h4>
+                    <p>SOC Analyst, Design Studio 360 INC</p>
+                </div>
+                <div class="item">
+                    <h4>2017 - 2019</h4>
+                    <p>Junior Pen Tester, SL Mene 360 INC</p>
+                </div>
+            </section>
 
-    <script src="app.js"></script>
+            <section class="education">
+                <h3>Education</h3>
+                <div class="item">
+                    <h4>2019 - 2021</h4>
+                    <p>Master of  CyberSecurity, UoK</p>
+                </div>
+                <div class="item">
+                    <h4>2015 - 2019</h4>
+                    <p>Bachelor of CyberSecurity, FAST</p>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h3>Pro Skills</h3>
+                <ul>
+                    <li>DFIR</li>
+                    <li>SIEM</li>
+                    <li>Networking</li>
+                    <li>Programming</li>
+                </ul>
+            </section>
+
+            <section class="references">
+                <h3>References</h3>
+                <div class="reference">
+                    <p>Arif Ali Khan</p>
+                    <p>CTO, Creative UI Design Inc.</p>
+                    <p>Email: arifCTO@mail.com</p>
+                </div>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
